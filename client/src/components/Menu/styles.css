@@ -1,0 +1,78 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  background-color: white;
+}
+
+.main-nav .logo {
+  width: 80px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+.main-nav ul li a {
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: #444;
+  font-size: 16px;
+  font-weight: 600;
+}
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.main-nav .right-menu {
+  font-size: 13px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--text-color);
+  box-shadow: 0 0 0 2px var(--secondary-color);
+}
+
+.btn-2 {
+  cursor: pointer;
+  display: inline-block;
+  border-width: 1px !important;
+  border-color: #444 !important;
+
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.btn-2 a {
+  color: #fff !important;
+}
+.btn-2 a:hover {
+  color: #fff !important;
+}
+.btn-2:hover {
+  color: #fff !important;
+}

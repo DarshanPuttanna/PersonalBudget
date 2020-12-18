@@ -1,0 +1,148 @@
+.dashboard .side-nav {
+  background-color: lightsteelblue;
+  padding: 8px;
+}
+
+.dashboard .side-nav li {
+  display: inline;
+  margin: 20px 10px;
+  color: var(--text-color);
+}
+
+.dashboard .side-nav li i {
+  margin-right: 10px;
+}
+
+.dashboard .dashboard-content {
+  background-color: var(--dashboard-color);
+  width: 100%;
+}
+
+.dashboard .dashboard-content .dashboard-heading {
+  padding: 30px;
+}
+
+.dashboard .dashboard-content .dashboard-heading h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.dashboard .dashboard-content .dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dashboard .dashboard-content .dashboard-cards .card-content {
+  background-color: #fff;
+  margin: 0 20px;
+  padding: 20px;
+  display: grid;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dashboard .dashboard-content .dashboard-cards .card-content .icon-center {
+  text-align: left;
+  background-color: rgb(255, 183, 3, 0.6);
+  border-radius: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+.dashboard .dashboard-content .dashboard-cards .card-content .icon-center i {
+  margin-top: 10px;
+}
+
+.dashboard .dashboard-content .dashboard-cards .card-content .card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.dashboard .dashboard-content .dashboard-cards .card-content .card-body h3 {
+  font-size: 24px;
+}
+
+.dashboard .budget-circle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.dashboard .budget-circle .circle-content p {
+  width: 300px;
+  height: 300px;
+}
+
+.dashboard .chart-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+.dashboard .expenseCharts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+.dashboard .chart-cards .total-budget {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dashboard .chart-cards .total-budget h1 {
+  margin-top: 10px;
+}
+.dashboard .chart-cards .total-budget .chart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard .list-cards {
+  display: flex;
+}
+
+.dashboard .list-cards .list-content {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px 10px;
+  padding: 20px;
+}
+
+.dashboard .list-cards .list-content h3 {
+  margin: 10px 0;
+}
+
+.dashboard .list-cards .list-content .list-table {
+  padding: 10px;
+}
+
+.dashboard .list-cards .list-content .list-table td {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.dashboard .list-cards .list-content .list-tag {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.dashboard .list-cards .list-content .list-tag .list-link i {
+  margin-left: 10px;
+}

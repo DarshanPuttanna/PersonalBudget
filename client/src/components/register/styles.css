@@ -1,0 +1,209 @@
+.register-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  padding: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.register-card .register-logo {
+  text-align: center;
+}
+
+.register-card .register-logo img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.register-card .register-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card .register-heading h3 {
+  font-size: 1.8em;
+  font-style: bold;
+  margin-bottom: 15px;
+}
+
+.register-card .register-heading p {
+  color: var(--light-text);
+}
+
+.register-card .register-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 54px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 15%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register-card .register-content .register-form {
+  border: 2px solid #fff;
+  padding: 30px;
+  margin: 0 20px;
+  border-radius: 20px;
+}
+.register-card .register-content .register-form .form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card .register-content .register-form .form-content .form-group {
+  transition: all 0.3s;
+}
+
+.register-card
+  .register-content
+  .register-form
+  .form-content
+  .form-group
+  .form-label {
+  font-size: 1em;
+  color: var(--text-color);
+  display: block;
+  opacity: 1;
+  margin-left: 20px;
+  transform: translateY(-2.45em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+}
+
+.register-card
+  .register-content
+  .register-form
+  .form-content
+  .form-group
+  .form-control {
+  box-shadow: none;
+  border-style: none none none none;
+  transition: all 0.5s;
+}
+
+.register-card
+  .register-content
+  .register-form
+  .form-content
+  .form-group
+  .form-control::placeholder {
+  color: transparent;
+}
+
+.register-card
+  .register-content
+  .register-form
+  .form-content
+  .form-group
+  .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-style: solid solid solid solid;
+  border-color: var(--secondary-color);
+}
+
+.register-card
+  .register-content
+  .register-form
+  .form-content
+  .form-group
+  .form-control:focus
+  + .form-label,
+.register-card
+  .register-content
+  .register-form
+  .form-content
+  .form-group
+  .form-control:not(:placeholder-shown)
+  + .form-label {
+  transform: translateY(-3.3em) scale(0.8);
+}
+
+.register-card
+  .register-content
+  .register-form
+  .form-content
+  .form-group:focus-within {
+  transform: scale(1.05, 1.05);
+}
+
+.register-card .register-content .register-form input {
+  width: 18rem;
+  height: 50px;
+  border-radius: 6px;
+  background-color: var(--form-color);
+  font-size: 16px;
+}
+
+.register-card .register-content .register-form .submit-button {
+  outline: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  width: 10rem;
+  margin: auto;
+}
+
+.register-card .register-content .register-form .submit-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  transition: all 0.3s;
+  box-shadow: 0 0 0 3px var(--text-color);
+}
+
+.register-card .register-content .login-link {
+  text-align: center;
+}
+
+.register-card .register-content .login-link .loginText {
+  color: blue !important;
+}
+input[type='text'] {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input[type='email'] {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input[type='number'] {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input[type='password'] {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.form-group .invalid_register {
+  margin-top: -20px;
+}
+
+.form-group[data-error] input::after {
+  border-color: red;
+  color: red;
+  background-color: #fffafa;
+}
+
+.invalid_register[data-error]::after {
+  content: attr(data-error);
+  font-size: 0.8rem;
+  color: red;
+}

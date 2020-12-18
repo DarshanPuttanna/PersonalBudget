@@ -1,0 +1,197 @@
+@import url('semantic-ui-css/semantic.min.css');
+
+.dashboard .dashboard-content .budget-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.dashboard .budget-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-size: cover;
+  width: 100%;
+  background-color: var(--dashboard-color);
+}
+
+.dashboard .budget-card .budget-content .budget-logo {
+  margin: auto;
+}
+
+.dashboard .budget-card .budget-logo img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.budget-card .budget-heading h3 {
+  font-size: 1.8em;
+  font-style: bold;
+  margin-bottom: 15px;
+}
+
+.budget-card .budget-heading p {
+  color: var(--light-text);
+}
+
+.budget-card .budget-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 56px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.budget-card .budget-content .budget-form {
+  border: 2px solid #fff;
+  padding: 30px;
+  margin: 0 20px;
+  border-radius: 20px;
+}
+.budget-card .budget-content .budget-form .form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.budget-card .budget-content .budget-form .form-content .form-group {
+  transition: all 0.3s;
+}
+
+.budget-card
+  .budget-content
+  .budget-form
+  .form-content
+  .form-group
+  .form-label {
+  font-size: 1em;
+  margin-left: 10px;
+  color: var(--text-color);
+  display: block;
+  opacity: 1;
+  transform: translateY(-2.45em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+}
+
+.budget-card
+  .budget-content
+  .budget-form
+  .form-content
+  .form-group
+  .form-control {
+  box-shadow: none;
+  border-style: none none none none;
+  transition: all 0.5s;
+}
+
+.budget-card
+  .budget-content
+  .budget-form
+  .form-content
+  .form-group
+  .form-control::placeholder {
+  color: transparent;
+}
+
+.budget-card
+  .budget-content
+  .budget-form
+  .form-content
+  .form-group
+  .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-style: solid solid solid solid;
+  border-color: var(--secondary-color);
+}
+
+.budget-card
+  .budget-content
+  .budget-form
+  .form-content
+  .form-group
+  .form-control:focus
+  + .form-label,
+.budget-card
+  .budget-content
+  .budget-form
+  .form-content
+  .form-group
+  .form-control:not(:placeholder-shown)
+  + .form-label {
+  transform: translateY(-3.3em) scale(0.8);
+}
+
+.budget-card
+  .budget-content
+  .budget-form
+  .form-content
+  .form-group:focus-within {
+  transform: scale(1.05, 1.05);
+}
+
+.budget-card .budget-content .budget-form input {
+  width: 18rem;
+  height: 50px;
+  border-radius: 6px;
+  background-color: var(--form-color);
+  font-size: 16px;
+}
+
+.budget-card .budget-content .budget-form select {
+  width: 18rem;
+  height: 50px;
+  border-radius: 6px;
+  background-color: var(--form-color);
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  text-indent: 5px;
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+.budget-card .budget-content .budget-form .submit-button {
+  color: var(--secondary-color);
+  outline: none;
+  border-style: none none none none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  width: 10rem;
+  margin: auto;
+}
+
+.budget-card .budget-content .budget-form .submit-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  transition: all 0.3s;
+  box-shadow: 0 0 0 3px var(--text-color);
+}
+
+.budget-card .budget-content .budget-form .success-message {
+  margin-bottom: 10px;
+}
+.budget-card .budget-content .budget-form .error-message {
+  margin-bottom: 10px;
+}
+
+.budget-card .budget-content .budget-form .form-group {
+  margin: auto;
+}
+
+.budget-card .budget-content .budget-form .form-group input[type='text'] {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.budget-card .budget-content .budget-form .form-group input[type='number'] {
+  padding-top: 5px;
+  padding-left: 8px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
